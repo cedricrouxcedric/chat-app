@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Contact from './components/Contact';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Contact
+      name='Bessie Jacobs'
+      avatar='http://www.premiere.fr/sites/default/files/styles/scale_crop_1280x720/public/2019-01/Untitled%20collage%20%282%29_8.jpg'
+      online
+      />
+      <Contact
+          name='Everett Sullivan'
+          avatar='http://www.premiere.fr/sites/default/files/styles/scale_crop_1280x720/public/2019-01/Untitled%20collage%20%282%29_8.jpg'
+          online
+      />
+      <Contact
+          name='Beth Hernandez'
+          avatar='http://www.premiere.fr/sites/default/files/styles/scale_crop_1280x720/public/2019-01/Untitled%20collage%20%282%29_8.jpg'
+          offline
+      />
     </div>
   );
 }
